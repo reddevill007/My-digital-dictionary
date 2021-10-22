@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  color: #000;
+}
+
+.wrapper {
+  width: 420px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 28px 28px 45px;
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper .search {
+  margin: 35px 0 18px;
+  position: relative;
+}
+
+.wrapper .search input {
+  height: 53px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0 42px;
+  font-size: 16px;
+}
+
+.wrapper .search input::placeholder {
+  color: #b8b8b8;
+}
+
+.wrapper .search input:focus {
+  padding: 0 41px;
+  border: 2px solid #000;
+}
+
+.wrapper .search :where(i, span) {
+  position: absolute;
+  top: 50%;
+  color: #999;
+  transform: translateY(-50%);
+}
+
+.wrapper .search i {
+  left: 18px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.wrapper .search input:focus ~ i {
+  color: #4d59fb;
+}
+
+.wrapper .search span {
+  right: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  height: 20px;
+  width: 20px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .search input:valid ~ span {
+  display: block;
+}
+
+.wrapper .info-text {
+  font-size: 13px;
+  color: #9a9a9a;
+  margin: -3px 0 -10px;
+}
+
+.wrapper.active .info-text {
+  display: none;
+}
+
+.wrapper .info-text span {
+  font-weight: 500;
+  color: #4d59fb;
+}
+
+.wrapper ul {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.wrapper.active ul {
+  height: fit-content;
+  opacity: 1;
+}
+
+.wrapper ul li {
+  display: flex;
+  padding-bottom: 17px;
+  margin-bottom: 14px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.wrapper ul .word p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.wrapper ul .word span {
+  font-size: 12px;
+  color: #989898;
+}
+
+.wrapper ul .word i {
+  font-size: 15px;
+  cursor: pointer;
+  color: #999;
+}
+
+.wrapper ul .content li .details {
+  border-left: 3px solid #4d59fb;
+  border-radius: 4px 0 0 4px;
+  padding-left: 10px;
+}
+
+.wrapper ul .content li .details p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.wrapper ul .content li .details span {
+  color: #7e7e7e;
+  font-size: 15px;
+}
+
+.synonyms .details .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.synonyms .details .list span {
+  margin-left: 5px;
+  text-decoration: underline;
+}

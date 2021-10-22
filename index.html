@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <!---- Font Awesome Cdn Linkage ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>English Dictionary</header>
+        <div class="search">
+            <input type="text" placeholder="Search a word" required>
+            <i class="fas fa-search"></i>
+            <!-- <span><i class="fas fa-times"></i></span> -->
+        </div>
+        <p class="info-text">Type a word and press enter to get meaning, example, prononciation and synonyms of that word.</p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p>Happy</p>
+                    <span>adjective /'hapi/</span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span>Feeling or showing pleasure or contentment</span>
+                    </div>
+                </li>
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span>I am happy</span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms</p>
+                        <div class="list">
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
