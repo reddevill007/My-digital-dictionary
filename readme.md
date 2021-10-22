@@ -3,7 +3,7 @@
 
 You can use this website to get meaning, prounaciation, part of speech, usage and synonyms of any word
 # Demo
-For a demo of [Your Digital Dictionary](https://reddevill007.github.io/Javascript-Virtual-Assitant/)
+For a demo of [Your Digital Dictionary](https://reddevill007.github.io/My-digital-dictionary/)
 ## Contributing
 
 Contributions are always welcome!
